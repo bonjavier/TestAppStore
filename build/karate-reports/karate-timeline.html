@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-4","id":3},{"content":"pool-1-thread-3","id":4}];
+var items = [{"id":1,"group":1,"content":"testApi\/ejecicioUno\/deleteOrder\/deleteOrder[1.1:11]","start":1719809737027,"end":1719809738547,"title":"testApi\/ejecicioUno\/deleteOrder\/deleteOrder[1.1:11] 23:55:37.027-23:55:38.547 Delete order"},{"id":2,"group":2,"content":"testApi\/ejecicioUno\/deleteOrder\/deleteOrder[1.2:12]","start":1719809737027,"end":1719809738539,"title":"testApi\/ejecicioUno\/deleteOrder\/deleteOrder[1.2:12] 23:55:37.027-23:55:38.539 Delete order"},{"id":3,"group":3,"content":"testApi\/ejecicioUno\/searchOrder\/searchOrder[1:3]","start":1719809738227,"end":1719809738562,"title":"testApi\/ejecicioUno\/searchOrder\/searchOrder[1:3] 23:55:38.227-23:55:38.562 Search Order"},{"id":4,"group":4,"content":"testApi\/ejecicioUno\/searchOrderCreate\/searchOrder[1.1:12]","start":1719809738244,"end":1719809738961,"title":"testApi\/ejecicioUno\/searchOrderCreate\/searchOrder[1.1:12] 23:55:38.244-23:55:38.961 Search Order"},{"id":5,"group":2,"content":"testApi\/ejecicioUno\/searchOrderCreate\/searchOrder[1.2:13]","start":1719809738545,"end":1719809739180,"title":"testApi\/ejecicioUno\/searchOrderCreate\/searchOrder[1.2:13] 23:55:38.545-23:55:39.180 Search Order"},{"id":6,"group":3,"content":"testApi\/ejecicioUno\/SearchInventory\/searchInventory[1:3]","start":1719809737027,"end":1719809738207,"title":"testApi\/ejecicioUno\/SearchInventory\/searchInventory[1:3] 23:55:37.027-23:55:38.207 Consultar el inventario"},{"id":7,"group":4,"content":"testApi\/ejecicioUno\/postOrder\/postOrder[1:3]","start":1719809737027,"end":1719809738218,"title":"testApi\/ejecicioUno\/postOrder\/postOrder[1:3] 23:55:37.027-23:55:38.218 Create order"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

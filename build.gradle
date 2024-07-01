@@ -1,0 +1,41 @@
+plugins {
+    id("java")
+}
+
+group = "com.test.jduran"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'com.intuit.karate:karate-junit5:1.2.0.RC4'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    implementation 'net.masterthought:cucumber-reporting:5.7.5'
+    testImplementation 'junit:junit:4.13.1'
+
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty "karate.options", System.properties.getProperty("karate.options")
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+    outputs.upToDateWhen { false }
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+
+}

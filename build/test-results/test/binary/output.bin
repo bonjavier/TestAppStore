@@ -1,0 +1,328 @@
+R23:55:34.996 [Test worker] INFO  com.intuit.karate.Runner - karate.env is: 'dev'
+`23:55:35.869 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+_23:55:35.891 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+_23:55:37.103 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+_23:55:37.103 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: dev 
+_23:55:37.103 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: dev 
+_23:55:37.103 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: dev 
+B23:55:37.471 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+71 > GET https://petstore.swagger.io/v2/store/inventory
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"1 > Accept-Encoding: gzip,deflate
+
+
+B23:55:37.471 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+51 > POST https://petstore.swagger.io/v2/store/order/
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"1 > Accept-Encoding: gzip,deflate
+h{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112Z","status":"placed","complete":true}
+
+B23:55:37.472 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+51 > POST https://petstore.swagger.io/v2/store/order/
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"1 > Accept-Encoding: gzip,deflate
+h{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112Z","status":"placed","complete":true}
+
+B23:55:37.471 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+51 > POST https://petstore.swagger.io/v2/store/order/
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"1 > Accept-Encoding: gzip,deflate
+h{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112Z","status":"placed","complete":true}
+
+\23:55:38.190 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 714
+1 < 200
+(1 < Date: Mon, 01 Jul 2024 04:55:38 GMT
+#1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+#1 < Access-Control-Allow-Origin: *
+91 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#1 < Server: Jetty(9.2.9.v20150224)
+l{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112+0000","status":"placed","complete":true}
+
+\23:55:38.190 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 714
+1 < 200
+(1 < Date: Mon, 01 Jul 2024 04:55:38 GMT
+#1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+#1 < Access-Control-Allow-Origin: *
+91 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#1 < Server: Jetty(9.2.9.v20150224)
+D{"sold":137,"string":438,"pending":112,"available":293,"Pending":1}
+
+\23:55:38.190 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 713
+1 < 200
+(1 < Date: Mon, 01 Jul 2024 04:55:38 GMT
+#1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+#1 < Access-Control-Allow-Origin: *
+91 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#1 < Server: Jetty(9.2.9.v20150224)
+l{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112+0000","status":"placed","complete":true}
+
+\23:55:38.190 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 713
+1 < 200
+(1 < Date: Mon, 01 Jul 2024 04:55:38 GMT
+#1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+#1 < Access-Control-Allow-Origin: *
+91 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#1 < Server: Jetty(9.2.9.v20150224)
+l{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112+0000","status":"placed","complete":true}
+
+[23:55:38.202 [pool-1-thread-4] INFO  com.intuit.karate - [print] --los datos son ------- {
+  "sold": 137,
+  "string": 438,
+  "pending": 112,
+  "available": 293,
+  "Pending": 1
+}
+ 
+T23:55:38.204 [pool-1-thread-2] INFO  com.intuit.karate - [print] ---el ID es--- 1 
+T23:55:38.204 [pool-1-thread-1] INFO  com.intuit.karate - [print] ---el ID es--- 1 
+T23:55:38.205 [pool-1-thread-3] INFO  com.intuit.karate - [print] ---el ID es--- 1 
+_23:55:38.230 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: dev 
+B23:55:38.232 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+L2 > DELETE https://petstore.swagger.io/v2/store/order/321312312321312312312
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+82 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"2 > Accept-Encoding: gzip,deflate
+
+
+B23:55:38.234 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+51 > GET https://petstore.swagger.io/v2/store/order/1
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"1 > Accept-Encoding: gzip,deflate
+
+
+B23:55:38.249 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+82 > DELETE https://petstore.swagger.io/v2/store/order/1
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+82 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"2 > Accept-Encoding: gzip,deflate
+
+
+_23:55:38.246 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: dev 
+B23:55:38.300 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+51 > POST https://petstore.swagger.io/v2/store/order/
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"1 > Accept-Encoding: gzip,deflate
+h{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112Z","status":"placed","complete":true}
+
+\23:55:38.537 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 302
+1 < 200
+(1 < Date: Mon, 01 Jul 2024 04:55:38 GMT
+#1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+#1 < Access-Control-Allow-Origin: *
+91 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#1 < Server: Jetty(9.2.9.v20150224)
+l{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112+0000","status":"placed","complete":true}
+
+\23:55:38.537 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 303
+2 < 404
+(2 < Date: Mon, 01 Jul 2024 04:55:38 GMT
+#2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+#2 < Access-Control-Allow-Origin: *
+92 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#2 < Server: Jetty(9.2.9.v20150224)
+w{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"321312312321312312312\""}
+
+\23:55:38.546 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 294
+2 < 200
+(2 < Date: Mon, 01 Jul 2024 04:55:38 GMT
+#2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+#2 < Access-Control-Allow-Origin: *
+92 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#2 < Server: Jetty(9.2.9.v20150224)
+,{"code":200,"type":"unknown","message":"1"}
+
+_23:55:38.548 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: dev 
+[23:55:38.562 [pool-1-thread-4] INFO  com.intuit.karate - [print] --los datos son ------- {
+  "id": 1,
+  "petId": 0,
+  "quantity": 0,
+.  "shipDate": "2024-06-30T23:29:21.112+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+B23:55:38.564 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+51 > POST https://petstore.swagger.io/v2/store/order/
+21 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 103
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+81 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"1 > Accept-Encoding: gzip,deflate
+h{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112Z","status":"placed","complete":true}
+
+\23:55:38.640 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 340
+1 < 200
+(1 < Date: Mon, 01 Jul 2024 04:55:38 GMT
+#1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+#1 < Access-Control-Allow-Origin: *
+91 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#1 < Server: Jetty(9.2.9.v20150224)
+l{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112+0000","status":"placed","complete":true}
+
+T23:55:38.644 [pool-1-thread-3] INFO  com.intuit.karate - [print] ---el ID es--- 1 
+B23:55:38.650 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+52 > GET https://petstore.swagger.io/v2/store/order/1
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+82 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"2 > Accept-Encoding: gzip,deflate
+
+
+\23:55:38.860 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 295
+1 < 200
+(1 < Date: Mon, 01 Jul 2024 04:55:38 GMT
+#1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+#1 < Access-Control-Allow-Origin: *
+91 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#1 < Server: Jetty(9.2.9.v20150224)
+l{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112+0000","status":"placed","complete":true}
+
+T23:55:38.863 [pool-1-thread-2] INFO  com.intuit.karate - [print] ---el ID es--- 1 
+B23:55:38.868 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+I2 > GET https://petstore.swagger.io/v2/store/order/321312312321312312312
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+82 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+"2 > Accept-Encoding: gzip,deflate
+
+
+\23:55:38.956 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 305
+2 < 200
+(2 < Date: Mon, 01 Jul 2024 04:55:38 GMT
+#2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+#2 < Access-Control-Allow-Origin: *
+92 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#2 < Server: Jetty(9.2.9.v20150224)
+l{"id":1,"petId":0,"quantity":0,"shipDate":"2024-06-30T23:29:21.112+0000","status":"placed","complete":true}
+
+[23:55:38.961 [pool-1-thread-3] INFO  com.intuit.karate - [print] --los datos son ------- {
+  "id": 1,
+  "petId": 0,
+  "quantity": 0,
+.  "shipDate": "2024-06-30T23:29:21.112+0000",
+  "status": "placed",
+  "complete": true
+}
+ 
+\23:55:39.176 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 307
+2 < 404
+(2 < Date: Mon, 01 Jul 2024 04:55:39 GMT
+#2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+#2 < Access-Control-Allow-Origin: *
+92 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+G2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+#2 < Server: Jetty(9.2.9.v20150224)
+w{"code":404,"type":"unknown","message":"java.lang.NumberFormatException: For input string: \"321312312321312312312\""}
+
+[23:55:39.180 [pool-1-thread-2] INFO  com.intuit.karate - [print] --los datos son ------- {
+  "code": 404,
+  "type": "unknown",
+\  "message": "java.lang.NumberFormatException: For input string: \"321312312321312312312\""
+}
+ 
+:---------------------------------------------------------
+Gfeature: classpath:testApi/ejecicioUno/deleteOrder/deleteOrder.feature
+7scenarios:  2 | passed:  2 | failed:  0 | time: 2,7396
+:---------------------------------------------------------
+
+§23:55:39.805 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:testApi/ejecicioUno/deleteOrder/deleteOrder.feature
+:---------------------------------------------------------
+Cfeature: classpath:testApi/ejecicioUno/postOrder/postOrder.feature
+7scenarios:  1 | passed:  1 | failed:  0 | time: 1,0400
+:---------------------------------------------------------
+
+†23:55:39.901 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (3 remaining) classpath:testApi/ejecicioUno/postOrder/postOrder.feature
+:---------------------------------------------------------
+Ofeature: classpath:testApi/ejecicioUno/SearchInventory/searchInventory.feature
+7scenarios:  1 | passed:  1 | failed:  0 | time: 1,0283
+:---------------------------------------------------------
+
+¨23:55:39.976 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:testApi/ejecicioUno/SearchInventory/searchInventory.feature
+:---------------------------------------------------------
+Gfeature: classpath:testApi/ejecicioUno/searchOrder/searchOrder.feature
+7scenarios:  1 | passed:  1 | failed:  0 | time: 0,3305
+:---------------------------------------------------------
+
+§23:55:40.070 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 5 (1 remaining) classpath:testApi/ejecicioUno/searchOrder/searchOrder.feature
+:---------------------------------------------------------
+Mfeature: classpath:testApi/ejecicioUno/searchOrderCreate/searchOrder.feature
+7scenarios:  2 | passed:  2 | failed:  0 | time: 1,3237
+:---------------------------------------------------------
+
+™23:55:40.258 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:testApi/ejecicioUno/searchOrderCreate/searchOrder.feature
+Karate version: 1.2.0.RC4
+8======================================================
+6elapsed:   5,28 | threads:    4 | thread time: 6,46 
+4features:     5 | skipped:    0 | efficiency: 0,31
+-scenarios:    7 | passed:     7 | failed: 0
+8======================================================
+
+FHTML report: (paste into browser to view) | Karate version: 1.2.0.RC4
+^file:///C:/Users/ASUS/Documents/Estudio/TestAppStore/build/karate-reports/karate-summary.html
+D===================================================================
+
+ Vjun. 30, 2024 11:55:40 P.¬†M. net.masterthought.cucumber.ReportParser parseJsonFiles
+ óINFO: File 'C:\Users\ASUS\Documents\Estudio\TestAppStore\build\karate-reports\testApi.ejecicioUno.deleteOrder.deleteOrder.json' contains 1 feature(s)
+ Vjun. 30, 2024 11:55:40 P.¬†M. net.masterthought.cucumber.ReportParser parseJsonFiles
+ ìINFO: File 'C:\Users\ASUS\Documents\Estudio\TestAppStore\build\karate-reports\testApi.ejecicioUno.postOrder.postOrder.json' contains 1 feature(s)
+ Vjun. 30, 2024 11:55:40 P.¬†M. net.masterthought.cucumber.ReportParser parseJsonFiles
+ üINFO: File 'C:\Users\ASUS\Documents\Estudio\TestAppStore\build\karate-reports\testApi.ejecicioUno.SearchInventory.searchInventory.json' contains 1 feature(s)
+ Vjun. 30, 2024 11:55:40 P.¬†M. net.masterthought.cucumber.ReportParser parseJsonFiles
+ óINFO: File 'C:\Users\ASUS\Documents\Estudio\TestAppStore\build\karate-reports\testApi.ejecicioUno.searchOrder.searchOrder.json' contains 1 feature(s)
+ Vjun. 30, 2024 11:55:40 P.¬†M. net.masterthought.cucumber.ReportParser parseJsonFiles
+ ùINFO: File 'C:\Users\ASUS\Documents\Estudio\TestAppStore\build\karate-reports\testApi.ejecicioUno.searchOrderCreate.searchOrder.json' contains 1 feature(s)
